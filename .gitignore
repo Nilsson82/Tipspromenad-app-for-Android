@@ -32,3 +32,8 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Independent companion repositories; commit/upload these from their own folders.
+related-projects/
+.pnpm-store/
+deliverables/

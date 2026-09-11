@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tipspromenad</string>
+    <string name="action_settings">Sprogindstillinger</string>
+    <string name="first_fragment_label">Tipspromenad</string>
+    <string name="second_fragment_label">Om Tipspromenad</string>
+    <string name="quiz_title">Tipspromenad-quiz</string>
+    <string name="back">Tilbage</string>
+    <string name="cancel">Annuller</string>
+    <string name="apply">Anvend</string>
+    <string name="ui_language">Appens sprog</string>
+    <string name="quiz_language">Spørgsmålenes sprog</string>
+    <string name="language_settings_help">Appens sprog og spørgsmålenes sprog gemmes hver for sig. Når du ændrer sprog, genindlæses quizsiden. Hvis du ændrer spørgsmålenes sprog, åbnes en anden samling. Manglende oversættelser af spørgsmål erstattes ikke med et andet sprog.</string>
+    <string name="info_about_tipspromenad_quiz">Om Tipspromenad</string>
+    <string name="app_info">Gå mellem spørgsmålene, og besvar dem på din telefon. Tipspromenad passer til arrangementer, holdaktiviteter og hyggelige stunder med venner.&lt;br/&gt;&lt;br/&gt;Denne version henter spørgsmål fra et websted og kræver internetadgang. Du kan også spille i din browser: &lt;a href=\"https://nilsson82.github.io/TipspromenadQuizWebPage/\"&gt;Åbn quizsiden&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Vælg appens sprog og spørgsmålenes sprog hver for sig under Sprogindstillinger. Hvis en samling ikke findes på dit valgte sprog, giver webstedet dig besked.</string>
+    <string name="dev_info">Find flere apps og spil fra udvikleren på Google Play: &lt;a href=\"https://play.google.com/store/apps/developer?id=Nilsson82\"&gt;Nilsson82 på Google Play&lt;/a&gt;.</string>
+</resources>

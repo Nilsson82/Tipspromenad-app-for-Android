@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.text.Html
 import android.text.method.LinkMovementMethod
+import androidx.navigation.fragment.findNavController
 import com.nilsson.tipspromenad.databinding.FragmentSecondBinding
 
 
@@ -33,6 +34,8 @@ class SecondFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.buttonBack.setOnClickListener { findNavController().popBackStack() }
 
         // Process app_info with HTML
         binding.textviewQuizInfo.apply {

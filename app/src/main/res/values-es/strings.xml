@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tipspromenad</string>
+    <string name="action_settings">Configuración de idiomas</string>
+    <string name="first_fragment_label">Tipspromenad</string>
+    <string name="second_fragment_label">Acerca de Tipspromenad</string>
+    <string name="quiz_title">Cuestionario Tipspromenad</string>
+    <string name="back">Volver</string>
+    <string name="cancel">Cancelar</string>
+    <string name="apply">Aplicar</string>
+    <string name="ui_language">Idioma de la aplicación</string>
+    <string name="quiz_language">Idioma de las preguntas</string>
+    <string name="language_settings_help">El idioma de la aplicación y el de las preguntas se guardan por separado. Al cambiar un idioma, la página del cuestionario se vuelve a cargar. Cambiar el idioma de las preguntas abre otra colección. Las traducciones que faltan no se sustituyen por otro idioma.</string>
+    <string name="info_about_tipspromenad_quiz">Acerca de Tipspromenad</string>
+    <string name="app_info">Camina entre las preguntas y respóndelas con tu móvil. Tipspromenad es ideal para eventos, actividades en equipo y momentos con amigos.&lt;br/&gt;&lt;br/&gt;Esta versión carga las preguntas desde un sitio web y requiere conexión a internet. También puedes jugar en tu navegador: &lt;a href=\"https://nilsson82.github.io/TipspromenadQuizWebPage/\"&gt;Abrir el sitio del cuestionario&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Elige por separado el idioma de la aplicación y el de las preguntas en Configuración de idiomas. Si una colección no está disponible en el idioma elegido, el sitio web te lo indicará.</string>
+    <string name="dev_info">Encuentra más aplicaciones y juegos del desarrollador en Google Play: &lt;a href=\"https://play.google.com/store/apps/developer?id=Nilsson82\"&gt;Nilsson82 en Google Play&lt;/a&gt;.</string>
+</resources>

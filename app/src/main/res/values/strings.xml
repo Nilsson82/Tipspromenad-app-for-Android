@@ -1,20 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Tips Promenad</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="app_info">
-    This is the Tipspromenad app — a fun quiz app where you walk around and answer questions along the way. Perfect for events, team building, or just having fun with friends!
-    &#10;&#10;Note: The app requires internet access because the questions are hosted on a webpage. If your phone does not support the app, you can also access the questions directly from the webpage:
-    &lt;a href="https://nilsson82.github.io/TipspromenadQuizWebPage/"&gt;Visit Quiz Webpage&lt;/a&gt;
-    </string>
-    <string name="dev_info">
-        Check out my other apps and games on Google Play:
-        &lt;a href="https://play.google.com/store/apps/developer?id=Nilsson82"&gt;Nilsson82 on Google Play&lt;/a&gt;
-    </string>
-    <string name="info_about_tipspromenad_quiz">Info about Tipspromenad Quiz</string>
+    <string name="app_name">Tipspromenad</string>
+    <string name="action_settings">Language settings</string>
+    <string name="first_fragment_label">Tipspromenad</string>
+    <string name="second_fragment_label">About Tipspromenad</string>
+    <string name="quiz_title">Tipspromenad Quiz</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="ui_language">App language</string>
+    <string name="quiz_language">Question language</string>
+    <string name="language_settings_help">The app language and question language are saved separately. Changing a language reloads the quiz page. Changing the question language opens a different question collection. Unavailable question translations are not replaced with another language.</string>
+    <string name="info_about_tipspromenad_quiz">About Tipspromenad</string>
+    <string name="app_info">Walk between questions and answer them on your phone. Tipspromenad is suitable for events, team activities and time with friends.&lt;br/&gt;&lt;br/&gt;This version loads questions from a website and requires internet access. You can also play in your browser: &lt;a href=\"https://nilsson82.github.io/TipspromenadQuizWebPage/\"&gt;Open the quiz website&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Choose the app language and question language separately in Language settings. If a question collection is unavailable in your chosen language, the website will let you know.</string>
+    <string name="dev_info">Find more apps and games from the developer on Google Play: &lt;a href=\"https://play.google.com/store/apps/developer?id=Nilsson82\"&gt;Nilsson82 on Google Play&lt;/a&gt;.</string>
 </resources>

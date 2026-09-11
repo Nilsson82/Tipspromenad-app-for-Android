@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.nilsson.tipspromenad.FirstFragment"
-        android:label="Tipspromenad"
+        android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
         <action
@@ -18,11 +18,6 @@
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.nilsson.tipspromenad.SecondFragment"
-        android:label="Tipspromenad info"
-        tools:layout="@layout/fragment_second">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second" />
 </navigation>

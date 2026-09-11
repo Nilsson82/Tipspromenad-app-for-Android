@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tipspromenad</string>
+    <string name="action_settings">Kieliasetukset</string>
+    <string name="first_fragment_label">Tipspromenad</string>
+    <string name="second_fragment_label">Tietoa Tipspromenadista</string>
+    <string name="quiz_title">Tipspromenad-tietovisa</string>
+    <string name="back">Takaisin</string>
+    <string name="cancel">Peruuta</string>
+    <string name="apply">Käytä</string>
+    <string name="ui_language">Sovelluksen kieli</string>
+    <string name="quiz_language">Kysymysten kieli</string>
+    <string name="language_settings_help">Sovelluksen kieli ja kysymysten kieli tallennetaan erikseen. Kielen vaihtaminen lataa tietovisasivun uudelleen. Kysymysten kielen vaihtaminen avaa toisen kysymyskokoelman. Puuttuvia kysymysten käännöksiä ei korvata toisella kielellä.</string>
+    <string name="info_about_tipspromenad_quiz">Tietoa Tipspromenadista</string>
+    <string name="app_info">Kävele kysymykseltä toiselle ja vastaa puhelimellasi. Tipspromenad sopii tapahtumiin, ryhmätoimintaan ja yhteisiin hetkiin ystävien kanssa.&lt;br/&gt;&lt;br/&gt;Tämä versio lataa kysymykset verkkosivustolta ja vaatii internetyhteyden. Voit pelata myös selaimessa: &lt;a href=\"https://nilsson82.github.io/TipspromenadQuizWebPage/\"&gt;Avaa tietovisasivusto&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Valitse sovelluksen kieli ja kysymysten kieli erikseen Kieliasetuksissa. Jos kokoelmaa ei ole saatavilla valitsemallasi kielellä, verkkosivusto ilmoittaa siitä.</string>
+    <string name="dev_info">Löydät lisää kehittäjän sovelluksia ja pelejä Google Playsta: &lt;a href=\"https://play.google.com/store/apps/developer?id=Nilsson82\"&gt;Nilsson82 Google Playssa&lt;/a&gt;.</string>
+</resources>

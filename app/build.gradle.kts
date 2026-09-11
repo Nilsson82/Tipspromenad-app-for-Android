@@ -14,6 +14,8 @@ android {
         versionCode = 5
         versionName = "0.5"
 
+        resourceConfigurations += listOf("en", "es", "sv", "da", "no", "fi")
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
