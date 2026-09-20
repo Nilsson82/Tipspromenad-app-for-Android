@@ -11,8 +11,8 @@ android {
         applicationId = "com.nilsson.tipspromenad"
         minSdk = 32
         targetSdk = 36
-        versionCode = 5
-        versionName = "0.5"
+        versionCode = 6
+        versionName = "0.6"
 
         resourceConfigurations += listOf("en", "es", "sv", "da", "no", "fi")
 
@@ -45,6 +45,7 @@ android {
 }
 
 dependencies {
+    implementation("androidx.webkit:webkit:1.14.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

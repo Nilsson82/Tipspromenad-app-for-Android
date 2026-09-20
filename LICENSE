@@ -1,21 +1,22 @@
-MIT License
+Tipspromenad — source publication notice
 
-Copyright (c) 2025 Anders Nilsson
+Copyright (c) 2025–2026 Anders Nilsson and respective contributors, to the extent
+copyright subsists in their original contributions. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+No general license to use, modify, redistribute, sublicense, or sell this source
+is granted by its publication. Rights expressly provided by applicable law,
+GitHub's terms for public repositories, or an existing applicable third-party
+license are unaffected. Seek permission from the relevant rights holder for
+other uses.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+This notice applies only to rights held by the project's contributors.
+Third-party libraries, question content, images, assets, and trademarks remain
+subject to their own rights and terms. This notice neither claims ownership of
+them nor grants permission to redistribute them. Retain applicable third-party
+license and attribution notices.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This notice does not revoke permissions already granted for copies previously
+distributed under MIT, ISC, or another applicable license.
+
+The source is provided as available, without warranties to the extent permitted
+by law. Nothing in this notice excludes non-waivable statutory rights.

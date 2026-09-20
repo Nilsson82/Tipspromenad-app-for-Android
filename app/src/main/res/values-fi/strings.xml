@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Tipspromenad</string>
-    <string name="action_settings">Kieliasetukset</string>
+    <string name="action_settings">Asetukset</string>
     <string name="first_fragment_label">Tipspromenad</string>
     <string name="second_fragment_label">Tietoa Tipspromenadista</string>
     <string name="quiz_title">Tipspromenad-tietovisa</string>
@@ -14,4 +14,12 @@
     <string name="info_about_tipspromenad_quiz">Tietoa Tipspromenadista</string>
     <string name="app_info">Kävele kysymykseltä toiselle ja vastaa puhelimellasi. Tipspromenad sopii tapahtumiin, ryhmätoimintaan ja yhteisiin hetkiin ystävien kanssa.&lt;br/&gt;&lt;br/&gt;Tämä versio lataa kysymykset verkkosivustolta ja vaatii internetyhteyden. Voit pelata myös selaimessa: &lt;a href=\"https://nilsson82.github.io/TipspromenadQuizWebPage/\"&gt;Avaa tietovisasivusto&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Valitse sovelluksen kieli ja kysymysten kieli erikseen Kieliasetuksissa. Jos kokoelmaa ei ole saatavilla valitsemallasi kielellä, verkkosivusto ilmoittaa siitä.</string>
     <string name="dev_info">Löydät lisää kehittäjän sovelluksia ja pelejä Google Playsta: &lt;a href=\"https://play.google.com/store/apps/developer?id=Nilsson82\"&gt;Nilsson82 Google Playssa&lt;/a&gt;.</string>
+    <string name="correction_method">Tarkistustapa</string>
+    <string name="correction_direct">Visan päätyttyä</string>
+    <string name="correction_code">Tarkistuskoodi</string>
+    <string name="correction_qr">Tarkistuksen QR-koodi</string>
+    <string name="organizer">Järjestäjä: koodi / QR</string>
+    <string name="correction_help">Tarkistustavan vaihtaminen aloittaa uuden kierroksen ja poistaa vastauksesi. Jatketaanko?</string>
+    <string name="action_quit">Lopeta</string>
+    <string name="offline_info">Luo ja jaa tietokävelyjä ilman verkkoa. Osallistujien nimet, vastaukset ja tulokset pysyvät laitteessa. QR jakaa visan tai vastauslomakkeen. Kameraa käytetään vain skannaukseen ja sijaintia kävelymatkaan sovelluksen ollessa näkyvissä. Tietojen tyhjentäminen poistaa tallennukset. Osallistujatietoja ei varmuuskopioida pilveen.&lt;br/&gt;&lt;br/&gt;Kaikki oikeudet pidätetään · © 2025–2026 Anders Nilsson&lt;br/&gt;&lt;a href="https://github.com/Nilsson82/Tipspromenad-app-for-Android"&gt;Android / Privacy policy&lt;/a&gt;&lt;br/&gt;&lt;a href="https://github.com/Nilsson82/Tipspromenad"&gt;Question database&lt;/a&gt;&lt;br/&gt;&lt;a href="https://nilsson82.github.io/TipspromenadQuizWebPage/"&gt;Web&lt;/a&gt;</string>
 </resources>

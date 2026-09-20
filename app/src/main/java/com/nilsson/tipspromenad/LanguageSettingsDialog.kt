@@ -24,6 +24,15 @@ class LanguageSettingsDialog : DialogFragment() {
         binding.quizLanguage.setSelection(
             AppLanguages.supported.indexOf(settings.quizLanguage).coerceAtLeast(0)
         )
+        val modes = listOf("direct", "code", "qr")
+        binding.correctionMode.adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item,
+            listOf(getString(R.string.correction_direct), getString(R.string.correction_code), getString(R.string.correction_qr)))
+            .apply { setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) }
+        binding.correctionMode.setSelection(modes.indexOf(settings.correctionMode))
+        binding.organizerButton.setOnClickListener {
+            parentFragmentManager.setFragmentResult(ORGANIZER_KEY, Bundle.EMPTY)
+            dismiss()
+        }
 
         return MaterialAlertDialogBuilder(requireContext())
             .setTitle(R.string.action_settings)
@@ -33,6 +42,7 @@ class LanguageSettingsDialog : DialogFragment() {
                 val uiLanguage = AppLanguages.supported[binding.uiLanguage.selectedItemPosition]
                 val uiLanguageChanged = uiLanguage != LanguageSettings.uiLanguage(requireContext())
                 settings.quizLanguage = AppLanguages.supported[binding.quizLanguage.selectedItemPosition]
+                settings.correctionMode = modes[binding.correctionMode.selectedItemPosition]
                 AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(uiLanguage))
                 if (!uiLanguageChanged) {
                     parentFragmentManager.setFragmentResult(RESULT_KEY, Bundle.EMPTY)
@@ -43,6 +53,7 @@ class LanguageSettingsDialog : DialogFragment() {
 
     companion object {
         const val RESULT_KEY = "language_settings_changed"
+        const val ORGANIZER_KEY = "show_quiz_organizer"
         const val TAG = "language_settings"
     }
 }

@@ -1,3 +1,4 @@
+param([ValidatePattern('^[a-zA-Z0-9-]+$')][string]$Label = 'phase1')
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
@@ -6,7 +7,7 @@ $outputDirectory = Join-Path $projectRoot 'deliverables'
 New-Item -ItemType Directory -Force -Path $outputDirectory | Out-Null
 foreach ($name in @('TipspromenadQuizWebPage', 'Tipspromenad')) {
     $repository = Join-Path $projectRoot "related-projects/$name"
-    $archivePath = Join-Path $outputDirectory "$name-phase1.zip"
+    $archivePath = Join-Path $outputDirectory "$name-$Label.zip"
     # Only tracked/new project files, excluding Git internals, installed packages and caches.
     $files = @(& git -C $repository -c core.quotepath=false ls-files --cached --others --exclude-standard) | Sort-Object -Unique
     if ($LASTEXITCODE -ne 0) { throw "Cannot list $name" }

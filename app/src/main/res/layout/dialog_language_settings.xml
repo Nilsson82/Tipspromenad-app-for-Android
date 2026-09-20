@@ -44,6 +44,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:labelFor="@id/correction_mode"
+            android:text="@string/correction_method" />
+        <Spinner
+            android:id="@+id/correction_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:spinnerMode="dialog"
+            android:prompt="@string/correction_method" />
+        <Button
+            android:id="@+id/organizer_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/organizer" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/correction_help"
+            android:textAppearance="?attr/textAppearanceBody2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="@string/language_settings_help"
             android:textAppearance="?attr/textAppearanceBody2" />
     </LinearLayout>

@@ -28,6 +28,15 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         supportFragmentManager.setFragmentResultListener(
+            LanguageSettingsDialog.ORGANIZER_KEY, this
+        ) { _, _ ->
+            val navHost = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main)
+            val quiz = navHost?.childFragmentManager?.fragments?.filterIsInstance<FirstFragment>()?.firstOrNull()
+            quiz?.showOrganizer()
+            if (navController.currentDestination?.id == R.id.SecondFragment) navController.popBackStack()
+        }
+
+        supportFragmentManager.setFragmentResultListener(
             LanguageSettingsDialog.RESULT_KEY, this
         ) { _, _ ->
             val navHost = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main)
@@ -44,6 +53,9 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_settings -> {
+                val navHost = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main)
+                val quiz = navHost?.childFragmentManager?.fragments?.filterIsInstance<FirstFragment>()?.firstOrNull()
+                if (quiz?.showWalkSettings() == true) return true
                 if (supportFragmentManager.findFragmentByTag(LanguageSettingsDialog.TAG) == null) {
                     LanguageSettingsDialog().show(supportFragmentManager, LanguageSettingsDialog.TAG)
                 }
@@ -56,6 +68,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 true
             }
+            R.id.action_quit -> { finish(); true }
             else -> super.onOptionsItemSelected(item)
         }
     }

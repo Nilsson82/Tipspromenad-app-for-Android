@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Tipspromenad</string>
-    <string name="action_settings">Språkinnstillinger</string>
+    <string name="action_settings">Innstillinger</string>
     <string name="first_fragment_label">Tipspromenad</string>
     <string name="second_fragment_label">Om Tipspromenad</string>
     <string name="quiz_title">Tipspromenad-quiz</string>
@@ -14,4 +14,12 @@
     <string name="info_about_tipspromenad_quiz">Om Tipspromenad</string>
     <string name="app_info">Gå mellom spørsmålene og svar på dem på telefonen. Tipspromenad passer for arrangementer, lagaktiviteter og hyggelige stunder med venner.&lt;br/&gt;&lt;br/&gt;Denne versjonen henter spørsmål fra et nettsted og krever internettilgang. Du kan også spille i nettleseren: &lt;a href=\"https://nilsson82.github.io/TipspromenadQuizWebPage/\"&gt;Åpne quizsiden&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Velg appens språk og spørsmålenes språk hver for seg under Språkinnstillinger. Hvis en samling ikke finnes på språket du har valgt, gir nettstedet beskjed.</string>
     <string name="dev_info">Finn flere apper og spill fra utvikleren på Google Play: &lt;a href=\"https://play.google.com/store/apps/developer?id=Nilsson82\"&gt;Nilsson82 på Google Play&lt;/a&gt;.</string>
+    <string name="correction_method">Rettemetode</string>
+    <string name="correction_direct">Etter fullføring</string>
+    <string name="correction_code">Rettingskode</string>
+    <string name="correction_qr">QR-kode for retting</string>
+    <string name="organizer">Arrangør: kode / QR</string>
+    <string name="correction_help">Hvis du endrer rettemetoden, starter en ny runde og svarene dine slettes. Fortsette?</string>
+    <string name="action_quit">Avslutt</string>
+    <string name="offline_info">Lag og del tipsturer uten nett. Deltakernavn, svar og resultater blir på enheten. QR deler quizen eller svararket. Kamera brukes bare til skanning og posisjon bare til avstand med appen synlig. Sletting av appdata fjerner lagrede poster. Ingen skybackup av deltakerdata.&lt;br/&gt;&lt;br/&gt;Alle rettigheter forbeholdt · © 2025–2026 Anders Nilsson&lt;br/&gt;&lt;a href="https://github.com/Nilsson82/Tipspromenad-app-for-Android"&gt;Android / Privacy policy&lt;/a&gt;&lt;br/&gt;&lt;a href="https://github.com/Nilsson82/Tipspromenad"&gt;Question database&lt;/a&gt;&lt;br/&gt;&lt;a href="https://nilsson82.github.io/TipspromenadQuizWebPage/"&gt;Web&lt;/a&gt;</string>
 </resources>

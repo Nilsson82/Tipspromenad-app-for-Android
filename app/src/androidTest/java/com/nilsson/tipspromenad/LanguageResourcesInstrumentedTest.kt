@@ -17,12 +17,12 @@ class LanguageResourcesInstrumentedTest {
     @Test fun packagedResourcesResolveAllSixLanguagesAndKeepInfoLinks() {
         val baseContext = InstrumentationRegistry.getInstrumentation().targetContext
         val expectedSettingsTitles = mapOf(
-            "en" to "Language settings",
-            "es" to "Configuración de idiomas",
-            "sv" to "Språkinställningar",
-            "da" to "Sprogindstillinger",
-            "no" to "Språkinnstillinger",
-            "fi" to "Kieliasetukset"
+            "en" to "Settings",
+            "es" to "Configuración",
+            "sv" to "Inställningar",
+            "da" to "Indstillinger",
+            "no" to "Innstillinger",
+            "fi" to "Asetukset"
         )
         for ((language, expectedTitle) in expectedSettingsTitles) {
             val configuration = Configuration(baseContext.resources.configuration)

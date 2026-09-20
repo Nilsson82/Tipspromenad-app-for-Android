@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Tipspromenad</string>
-    <string name="action_settings">Configuración de idiomas</string>
+    <string name="action_settings">Configuración</string>
     <string name="first_fragment_label">Tipspromenad</string>
     <string name="second_fragment_label">Acerca de Tipspromenad</string>
     <string name="quiz_title">Cuestionario Tipspromenad</string>
@@ -14,4 +14,12 @@
     <string name="info_about_tipspromenad_quiz">Acerca de Tipspromenad</string>
     <string name="app_info">Camina entre las preguntas y respóndelas con tu móvil. Tipspromenad es ideal para eventos, actividades en equipo y momentos con amigos.&lt;br/&gt;&lt;br/&gt;Esta versión carga las preguntas desde un sitio web y requiere conexión a internet. También puedes jugar en tu navegador: &lt;a href=\"https://nilsson82.github.io/TipspromenadQuizWebPage/\"&gt;Abrir el sitio del cuestionario&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Elige por separado el idioma de la aplicación y el de las preguntas en Configuración de idiomas. Si una colección no está disponible en el idioma elegido, el sitio web te lo indicará.</string>
     <string name="dev_info">Encuentra más aplicaciones y juegos del desarrollador en Google Play: &lt;a href=\"https://play.google.com/store/apps/developer?id=Nilsson82\"&gt;Nilsson82 en Google Play&lt;/a&gt;.</string>
+    <string name="correction_method">Método de corrección</string>
+    <string name="correction_direct">Al terminar</string>
+    <string name="correction_code">Código de corrección</string>
+    <string name="correction_qr">QR de corrección</string>
+    <string name="organizer">Organizador: código / QR</string>
+    <string name="correction_help">Cambiar el método de corrección inicia una nueva ronda y borra tus respuestas. ¿Continuar?</string>
+    <string name="action_quit">Salir</string>
+    <string name="offline_info">Crea y comparte paseos de preguntas sin conexión. Los nombres, respuestas y resultados quedan en el dispositivo. Los QR comparten el quiz o las respuestas. La cámara solo se usa para escanear y la ubicación para caminar con la app visible. Borrar los datos elimina los registros. No se guardan copias de participantes en la nube.&lt;br/&gt;&lt;br/&gt;Todos los derechos reservados · © 2025–2026 Anders Nilsson&lt;br/&gt;&lt;a href="https://github.com/Nilsson82/Tipspromenad-app-for-Android"&gt;Android / Privacy policy&lt;/a&gt;&lt;br/&gt;&lt;a href="https://github.com/Nilsson82/Tipspromenad"&gt;Question database&lt;/a&gt;&lt;br/&gt;&lt;a href="https://nilsson82.github.io/TipspromenadQuizWebPage/"&gt;Web&lt;/a&gt;</string>
 </resources>

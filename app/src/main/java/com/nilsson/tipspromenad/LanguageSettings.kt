@@ -5,6 +5,13 @@ import androidx.appcompat.app.AppCompatDelegate
 
 class LanguageSettings(context: Context) {
     private val preferences = context.getSharedPreferences("language_settings", Context.MODE_PRIVATE)
+    var correctionMode: String
+        get() = preferences.getString("correction_mode", "direct")
+            ?.takeIf { it in listOf("direct", "code", "qr") } ?: "direct"
+        set(value) {
+            require(value in listOf("direct", "code", "qr"))
+            preferences.edit().putString("correction_mode", value).apply()
+        }
 
     var quizLanguage: String
         get() {

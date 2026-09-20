@@ -39,9 +39,11 @@ class SecondFragment : Fragment() {
 
         // Process app_info with HTML
         binding.textviewQuizInfo.apply {
-            text = Html.fromHtml(getString(R.string.app_info), Html.FROM_HTML_MODE_LEGACY)
+            text = Html.fromHtml(getString(R.string.offline_info), Html.FROM_HTML_MODE_LEGACY)
             movementMethod = LinkMovementMethod.getInstance()
         }
+        val version = requireContext().packageManager.getPackageInfo(requireContext().packageName, 0).versionName
+        binding.textviewQuizTitle.text = "${getString(R.string.app_name)} $version"
 
         binding.textviewQuizFooter.apply {
             text = Html.fromHtml(getString(R.string.dev_info), Html.FROM_HTML_MODE_LEGACY)
