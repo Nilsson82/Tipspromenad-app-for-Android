@@ -41,6 +41,9 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         locationCallback = null
     }
 
+    private val notificationPermission = registerForActivityResult(ActivityResultContracts.RequestPermission()) {
+        ContextCompat.startForegroundService(requireContext(), android.content.Intent(requireContext(), LocalQuizHostService::class.java))
+    }
     fun showWalkSettings(): Boolean {
         if (binding == null || !isResumed) return false
         val webView = quizWebView ?: return false
@@ -110,8 +113,23 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
     private fun createWebView(): WebView = WebView(requireContext()).apply {
         // Only the bundled, navigation-restricted origin can access this bridge.
         addJavascriptInterface(object {
+            @JavascriptInterface fun startLocalHost() {
+                activity?.runOnUiThread {
+                    if (android.os.Build.VERSION.SDK_INT >= 33 && ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED)
+                        notificationPermission.launch(Manifest.permission.POST_NOTIFICATIONS)
+                    else ContextCompat.startForegroundService(context, android.content.Intent(context, LocalQuizHostService::class.java))
+                }
+            }
+            @JavascriptInterface fun stopLocalHost() { context.stopService(android.content.Intent(context, LocalQuizHostService::class.java)) }
+            @JavascriptInterface fun localHostStatus(): String = LocalQuizServer.status()
+            @JavascriptInterface fun requestLocal(id: String, request: String) {
+                if (request.length > 14000) return
+                LocalQuizServer.dispatch(request) { response ->
+                    post { if (url?.startsWith("https://$ALLOWED_HOST/assets/quiz/") == true) evaluateJavascript("WalkLAN.reply(" + org.json.JSONObject.quote(id) + "," + response + ")", null) }
+                }
+            }
             @JavascriptInterface fun setLanguages(ui: String, questions: String) {
-                val supported = setOf("en", "sv", "es", "da", "no", "fi")
+                val supported = AppLanguages.supported
                 if (ui !in supported || questions !in supported) return
                 activity?.runOnUiThread {
                     val current = quizWebView?.url?.let(Uri::parse)

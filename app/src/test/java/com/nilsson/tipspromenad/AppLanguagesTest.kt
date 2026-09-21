@@ -24,19 +24,19 @@ class AppLanguagesTest {
     }
 
     @Test fun unsupportedQuestionLanguagesDoNotSilentlyBecomeEnglish() {
-        for (input in listOf(null, "", "de-DE", "fr", "zz")) {
+        for (input in listOf(null, "", "zz")) {
             assertNull(input, AppLanguages.normalize(input))
         }
     }
 
     @Test fun unsupportedUiLanguagesFallBackToEnglish() {
-        assertEquals("en", AppLanguages.uiLanguage("de-DE"))
+        assertEquals("en", AppLanguages.uiLanguage("zz"))
         assertEquals("en", AppLanguages.uiLanguage(null))
         assertEquals("sv", AppLanguages.uiLanguage("se"))
     }
 
     @Test fun languageNamesAndCodesStayPaired() {
-        assertEquals(6, AppLanguages.supported.size)
+        assertEquals(17, AppLanguages.supported.size)
         assertEquals(AppLanguages.supported.size, AppLanguages.nativeNames.size)
         assertEquals(AppLanguages.supported.size, AppLanguages.supported.toSet().size)
     }

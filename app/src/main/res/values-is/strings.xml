@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tipspromenad</string>
+    <string name="action_settings">Stillingar</string>
+    <string name="first_fragment_label">Tipspromenad</string>
+    <string name="second_fragment_label">About Tipspromenad</string>
+    <string name="quiz_title">Tipspromenad Quiz</string>
+    <string name="back">Til baka</string>
+    <string name="cancel">Loka</string>
+    <string name="apply">Vista</string>
+    <string name="ui_language">Tungumál viðmóts</string>
+    <string name="quiz_language">Tungumál spurninga</string>
+    <string name="language_settings_help">The app language and question language are saved separately. Changing a language reloads the quiz page. Changing the question language opens a different question collection. Unavailable question translations are not replaced with another language.</string>
+    <string name="info_about_tipspromenad_quiz">About Tipspromenad</string>
+    <string name="app_info">Walk between questions and answer them on your phone. Tipspromenad is suitable for events, team activities and time with friends.&lt;br/&gt;&lt;br/&gt;This version loads questions from a website and requires internet access. You can also play in your browser: &lt;a href=\"https://nilsson82.github.io/TipspromenadQuizWebPage/\"&gt;Open the quiz website&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Choose the app language and question language separately in Language settings. If a question collection is unavailable in your chosen language, the website will let you know.</string>
+    <string name="dev_info">Find more apps and games from the developer on Google Play: &lt;a href=\"https://play.google.com/store/apps/developer?id=Nilsson82\"&gt;Nilsson82 on Google Play&lt;/a&gt;.</string>
+    <string name="correction_method">Correction method</string>
+    <string name="correction_direct">After finishing</string>
+    <string name="correction_code">Correction code</string>
+    <string name="correction_qr">Correction QR</string>
+    <string name="organizer">Organizer: code / QR</string>
+    <string name="correction_help">Changing the correction method starts a new round and clears your answers. Continue?</string>
+    <string name="action_quit">Quit</string>
+    <string name="offline_info">Create and share quiz walks offline. Participant names, answers and results stay on the device. QR codes share the selected quiz or answer sheet. Camera is used only for scanning; location only for foreground distance walking. Clearing app data removes saved records. No cloud backup of participant records.&lt;br/&gt;&lt;br/&gt;All rights reserved · © 2025–2026 Anders Nilsson&lt;br/&gt;&lt;a href="https://github.com/Nilsson82/Tipspromenad-app-for-Android"&gt;Android / Privacy policy&lt;/a&gt;&lt;br/&gt;&lt;a href="https://github.com/Nilsson82/Tipspromenad"&gt;Question database&lt;/a&gt;&lt;br/&gt;&lt;a href="https://nilsson82.github.io/TipspromenadQuizWebPage/"&gt;Web&lt;/a&gt;</string>
+</resources>

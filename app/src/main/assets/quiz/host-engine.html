@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Local quiz host engine</title>
+<script src="lib/i18n.js"></script><script src="lib/walk-core.js"></script><script src="lib/walk-store.js"></script><script src="lib/walk-host.js"></script>
+<script>
+window.hostRequest=function(id,request){WalkHost.handle(request).then(result=>TipspromenadServer.reply(id,JSON.stringify(result))).catch(()=>TipspromenadServer.reply(id,JSON.stringify({status:503,body:{error:'host_unavailable'}})));};
+TipspromenadServer.ready();
+</script></html>

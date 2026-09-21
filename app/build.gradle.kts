@@ -11,10 +11,10 @@ android {
         applicationId = "com.nilsson.tipspromenad"
         minSdk = 32
         targetSdk = 36
-        versionCode = 6
-        versionName = "0.6"
+        versionCode = 8
+        versionName = "0.8"
 
-        resourceConfigurations += listOf("en", "es", "sv", "da", "no", "fi")
+        resourceConfigurations += listOf("en", "sv", "es", "da", "no", "fi", "is", "th", "zh", "ja", "ko", "de", "fr", "it", "nl", "pt", "pl")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

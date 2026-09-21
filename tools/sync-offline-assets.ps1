@@ -12,7 +12,8 @@ function Sync-File([string]$SourceFile, [string]$DestinationFile) {
         Copy-Item -LiteralPath $SourceFile -Destination $DestinationFile
     }
 }
-Sync-File (Join-Path $data 'revision-1.json') (Join-Path $web 'Data/revision-1.json')
+foreach ($file in Get-ChildItem -LiteralPath $data -Filter 'revision-*.json') { Sync-File $file.FullName (Join-Path $web ('Data/' + $file.Name)) }
+Sync-File (Join-Path $data 'latest.json') (Join-Path $web 'Data/latest.json')
 $assets = @('index.html','script.js','styles.css','walk.css')
 foreach ($directory in @('lib','locales','Data')) {
     $assets += Get-ChildItem -LiteralPath (Join-Path $web $directory) -File -Recurse | ForEach-Object { $_.FullName.Substring($web.Length + 1) }

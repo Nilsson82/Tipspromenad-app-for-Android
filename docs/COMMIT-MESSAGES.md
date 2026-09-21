@@ -52,3 +52,46 @@ Android: `feat: simplify menu and show random quiz corrections inline`
 Web: `feat: remember participant names and correct random quizzes in place`
 
 Question database: no changes in this follow-up; no new commit needed.
+
+## Modern question layout
+
+Android: `feat: add 1-X-2 answer cards and full-height single-question navigation`
+
+Web: `feat: modernize quiz cards, creator count and walking navigation`
+
+Question database: unchanged.
+## Current changes — 2026-09-21
+
+### Android
+```text
+feat: add phone-hosted LAN quizzes, persistent gates and tie-breakers
+
+Host experimental local quizzes directly from Android using a foreground
+service. Serve quiz data to participants and collect scored results locally.
+Persist time/distance gates and require both when configured together.
+Add numerical tie-breakers, compatible v2 share codes and 17-language
+selection with English fallback. Bundle revision 2 and add host tests.
+```
+
+### TipspromenadQuizWebPage
+```text
+feat: align WebQuiz with Android and support local-host participation
+
+Add creator and organizer flows, difficulty filters and numerical tie-breaks.
+Match shared navigation, question cards, progress and inline corrections.
+Keep timed gates while gracefully skipping browser distance requirements.
+Join Android-hosted LAN rooms, receive exact quiz data and retry results.
+Add versioned sharing, database refresh and multilingual fallbacks.
+```
+
+### Tipspromenad question database
+```text
+feat: publish revision 2 with expanded questions and numeric tie-breakers
+
+Add 48 normal questions and two numerical tie-breakers with stable IDs.
+Extend starter and tie-breaker translations to 17 language codes.
+Preserve revision 1, add question sets and difficulty metadata, and update
+schema, registry, integrity manifest and revision validation tests.
+```
+
+These are suggested messages only; no commits or pushes were performed.
